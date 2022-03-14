@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Satisfy&display=swap');
+
+body::-webkit-scrollbar{
+    width:0.3em;
+}
+body::-webkit-scrollbar-track{
+    background:#F2EDD7;
+}
+body::-webkit-scrollbar-thumb{
+    background:#3A6351;
+}
+
 body{
     background: #F2EDD7;
     font-family: 'Dongle', sans-serif;
@@ -8,11 +19,11 @@ body{
     margin: 0;
 }
 .container{
-    max-width: 900px;
+    max-width: 1000px;
     margin:0 auto;
 }
 .container-head{
-    max-width: 900px;
+    max-width: 1000px;
     margin:0 auto;
 }
 .container-adapt{
@@ -25,7 +36,7 @@ body{
 }
 .header-bottom{
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
 }
 .occupation{
     margin: 0 170px 0 0;
@@ -111,7 +122,6 @@ main{
 }
 .about-me{
     margin: 0 0 0 80px;
-    height: 400px;
     animation: fadeIn 2s;
 }
 .about-me p span{
@@ -119,6 +129,10 @@ main{
     margin: 0;
     font-size: 70px;
     font-weight: bold;
+}
+.about-me p a{
+    text-decoration: none;
+    color: #E48257
 }
 /* SECTION END  */
 /* FOOTER  */
@@ -208,16 +222,13 @@ footer{
 
     /* BODY  */
     .main-inner{
-        display:grid;
+        display:flex;
     }
     .pfp img{
         border-radius: 50%;
         height: 200px;
         width: 185px;
         animation: fadeIn 1s;
-    }
-    .pfp{
-        margin: 0 auto;
     }
     .about-me{
         margin: 0 10%;

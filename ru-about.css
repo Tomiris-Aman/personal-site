@@ -14,9 +14,16 @@ body{
     background: #F2EDD7;
     font-family: 'Comfortaa', cursive;
     color: #3A6351;
-    font-size: 30px;
+    font-size: 18px;
     padding: 40px 0 0;
     margin: 0;
+}
+main h1{
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+main td{
+    padding-bottom: 20px;
 }
 .container{
     max-width: 1000px;
@@ -99,33 +106,49 @@ body{
 }
 
 /* HEADER END  */
-.window{
-    margin: 100px 0 ;
-    display: flex;
+
+
+main{
+    margin: 80px 0 80px 20%;
 }
-.window img{
-    height: 300px;
-    width: 520px;
-    filter: saturate(100%);
-    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+#name{
+    width: 285px;
+    margin: 0 0 20px 0;
 }
-.window img:hover{
-    transform: scale(1.1);
-    -webkit-transition: transform 0.5s ease-in-out;
+#email{
+    width: 285px;
+    margin: 0 0 20px 0;
 }
-.window .desc{
-    margin: 0 0 0 50px;
+#phone{
+    width: 600px;
+    margin: 0 0 20px 0;
 }
-.desc h1{
-    font-size: 30px;
+#message{
+    width: 600px;
+    height: 200px; 
 }
-.desc p{
-    font-size: 20px;
-    padding: 30px 0 0;
-}
-.main-inner-adapt{
-    display: none;
-}
+.main-inner button{
+    background-color: #E48257;
+    color: #F2EDD7;
+    border:#E48257 solid 0.5px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    width: 620px;
+    cursor: pointer;
+ }
+ .main-inner button:hover{
+    background-color: transparent;
+    color: #3A6351;
+    border:#3A6351 solid 0.5px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+    width: 620px;
+    cursor: pointer;
+    transition-duration: 1s;
+ }
+
 /* FOOTER  */
 footer{
     background: #393232;
@@ -159,7 +182,6 @@ footer{
 .socials a:hover{
     color: #3A6351;
 }
-
 @media screen and (max-width: 480px) {
     .container-head{
         display:none;
@@ -210,30 +232,37 @@ footer{
         text-decoration: none;
         color: #F2EDD7;
     }
-    /* BODY  */
-    .window{
-        display: none;
+    /* MAIN  */
+    main{
+        margin: 40px 10%;
+     }
+    #name{
+        width: 90%;
+        margin: 0 0 20px 0;
     }
-    .main-inner-adapt{
-        display: inline;
+    #email{
+        width: 90%;
+        margin: 0 0 20px 0;
     }
-    .window-adapt{
-        display: grid;
-        margin: 50px 10%;
+    #phone{
+        width: 90%;
+        margin: 0 0 20px 0;
     }
-    .window-adapt h1{
-        font-size: 0.8em;
-        text-align: center;
+    #message{
+        width: 90%;
+        height: 200px; 
     }
-    .window-adapt p{
-        font-size: 0.5em;
-        text-align: center;
-    }
-    .window-adapt a img{
-        width: 300px;
-        height: 150px;
-    }
-    /* Footer  */
+    .main-inner button{
+        background-color: #E48257;
+        color: #F2EDD7;
+        border:#E48257 solid 0.5px;
+        padding: 1em;
+        letter-spacing: 0.3em;
+        margin-top: 1.5em;
+        width: 100%;
+        cursor: pointer;
+     }
+    /* FOOTER  */
     .footer-inner{
         display:grid;
         margin: 0 10px;
