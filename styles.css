@@ -212,7 +212,11 @@ footer{
 
     /* BODY  */
     .main-inner{
-        display:flex;
+        display: flex;
+        flex-direction: column;
+    }
+    .pfp{
+        margin: 0 auto;
     }
     .pfp img{
         border-radius: 50%;
