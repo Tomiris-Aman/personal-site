@@ -194,11 +194,11 @@ footer{
     .logo-adapt{
         font-family: 'Satisfy', cursive;
         color: #E48257;
-        font-size: 1em;
+        font-size: 1.7em;
     }
     .occupation-adapt{
         margin: 10px 0;
-        font-size: 0.5em;
+        font-size: 0.9em;
     }
     .links-adapt{
         display: flex;
@@ -212,7 +212,7 @@ footer{
     .links-adapt a{
         text-decoration: none;
         color: #3A6351;
-        font-size: 0.5em;
+        font-size: 0.7em;
     }
     .links-adapt .selected{
         color:#E48257;
